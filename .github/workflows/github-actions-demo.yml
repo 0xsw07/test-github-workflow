@@ -15,8 +15,8 @@ jobs:
   lint-app:
     runs-on: ubuntu-latest
     steps:
-      - name: Install dependencies
-        run: pip install -r requirements.txt && pip install pylint
+      - name: Install pylint
+        run: pip install pylint
 
       - name: Run Pylint
         run: pylint app.py
